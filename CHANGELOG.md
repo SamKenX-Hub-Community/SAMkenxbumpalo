@@ -29,6 +29,28 @@ Released YYYY-MM-DD.
 
 --------------------------------------------------------------------------------
 
+## 3.12.2
+
+Released 2023-05-09.
+
+### Changed
+
+* Added `rust-version` metadata to `Cargo.toml` which helps `cargo` with version
+  resolution.
+
+--------------------------------------------------------------------------------
+
+## 3.12.1
+
+Released 2023-04-21.
+
+### Fixed
+
+* Fixed a bug where `Bump::try_with_capacity(n)` where `n > isize::MAX` could
+  lead to attempts to create invalid `Layout`s.
+
+--------------------------------------------------------------------------------
+
 ## 3.12.0
 
 Released 2023-01-17.
